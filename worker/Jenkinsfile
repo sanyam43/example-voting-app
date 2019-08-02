@@ -25,7 +25,7 @@ pipeline{
        stage(three){
            steps{
                echo 'Packaging worker app'
-	       sh 'mvn package -Dskip test
+	       sh 'mvn package -Dskip test'
                sleep 3
            }
        }
