@@ -36,6 +36,7 @@ pipeline{
    }
    post{
        always{
+        archiveArtifacts '**/target/*.jar'
            echo 'This pipeline is completed'
        }
    }
